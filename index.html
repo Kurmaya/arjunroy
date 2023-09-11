@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Arjun Roy Project</title>
+  </head>
+  <body>
+    <div class="time-cont">
+    <h2 class="limit"> Enter time limit:</h2> <span id="time">0:00</span>  
+    </div>
+
+    <input type="text" id="myInput">
+    <button>Begin</button>
+    <h1>Number of Backspace/Delete: <span class="backs">0</span></h1>
+
+
+    <script>
+    var t;
+    let m = document.getElementById('time').innerText;
+    window.addEventListener('load',function(){
+    t=  prompt('enter Time Limit:');
+    if(t>0){
+      document.getElementById('time').innerText= t;
+      document.querySelector('.limit').innerText='Time Limit';
+    }
+  });
+
+
+
+  const butt= document.querySelector('button');
+  butt.addEventListener('click',begin);
+  function begin(){
+    butt.classList.add('active');
+    document.querySelector('.limit').innerText='Remaining Time :';
+
+  function timer(){
+    {
+      if(t<=0){
+       document.body.style.backgroundColor='rgba(255,0,0,1)';
+       document.getElementById('myInput').disabled=true;
+
+     }
+     else if(t>0){
+        t=t-1;
+        document.getElementById('time').innerText =t;
+
+      }
+
+
+
+      // break;
+
+    }
+  }
+  setInterval(timer
+    ,1000);
+  }
+  if(t=0){
+
+  }
+  var count=0;
+      document.querySelector('input').onkeydown = function (event) {
+
+        if (event.which == 8 || event.which == 46) {
+
+           event.preventDefault();   // turn off browser transition to the previous page
+    count++;
+    document.querySelector('.backs').textContent=count;
+           // alert(event.code);
+         }
+        };
+        document.querySelector('input').addEventListener('select', function() {
+          // this.addEventListener("mousedown", function(event){
+          //   event.preventDefault();
+          // });
+  this.selectionStart = this.selectionEnd;
+}, false);
+
+       </script>
+
+  </body>
+</html>

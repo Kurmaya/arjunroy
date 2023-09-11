@@ -29,12 +29,12 @@ h1,h2{
 }
 h1{
   position: absolute;
-  top:15%;
+  top:25%;
 }
 button{
   position: absolute;
-  top:60%;
-  transform: translateY(-60%);
+  top:70%;
+  transform: translateY(-70%);
   width:150px;
   padding: .5rem;
   border-radius: 25px;

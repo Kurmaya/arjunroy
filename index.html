@@ -15,7 +15,12 @@
     <input type="text" id="myInput" class="#capture" autocomplete="off">
     <button>Begin</button>
     <h1>Number of Backspace/Delete: <span class="backs">0</span></h1>
-
+    <audio id="buzz" style="display:none">
+      <source src="./audio/buzz.mp3" type="audio/mp3"> Your browser does not support the audio element.
+    </audio>
+    <audio id="over" style="display:none">
+  <source src="./audio/time.mp3" type="audio/mp3"> Your browser does not support the audio element.
+</audio>
 
     <script src="html2canvas.min.js" charset="utf-8"></script>
     <script>
@@ -32,6 +37,8 @@
 
 
   const butt= document.querySelector('button');
+  const buzz= document.getElementById('buzz');
+  const over =document.getElementById('over');
   butt.addEventListener('click',begin);
   document.getElementById('myInput').disabled=true;
   function begin(){
@@ -73,7 +80,8 @@
 
         if (event.which == 8 || event.which == 46) {
 
-           event.preventDefault();   // turn off browser transition to the previous page
+           event.preventDefault();
+           buzz.play();  // turn off browser transition to the previous page
     count++;
     document.querySelector('.backs').textContent=count;
            // alert(event.code);

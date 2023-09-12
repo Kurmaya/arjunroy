@@ -42,10 +42,10 @@
   butt.addEventListener('click',begin);
   document.getElementById('myInput').disabled=true;
   function begin(){
+    document.getElementById('myInput').disabled=false;
     document.getElementById('myInput').select();
     butt.classList.add('active');
     document.querySelector('.limit').innerText='Remaining Time :';
-    document.getElementById('myInput').disabled=false;
 
   function timer(){
     {

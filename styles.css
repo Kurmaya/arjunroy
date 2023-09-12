@@ -8,6 +8,12 @@ body{
   place-items:center;
   transition: .3s ease;
 }
+body.active{
+  background: red;
+
+
+}
+
 .time-cont{
   /* width:100%; */
   margin:50px auto auto;
@@ -23,6 +29,8 @@ input{
   width:50%;
   height: 100px;
   user-select: none;
+  border-radius: 25px;
+  /* border:0; */
 }
 h1,h2{
   display: inline;

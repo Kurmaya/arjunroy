@@ -1,0 +1,10 @@
+1)prompt of the day... 
+
+	1.a)create an array of nouns
+  	1.b)Pick a random noun one per day
+
+
+
+
+2)options of 60,90 or 120 seconds.
+

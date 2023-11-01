@@ -5,15 +5,15 @@
 }
 @font-face {
   font-family: "back";
-  src: url(/fonts/SFPRODISPLAYBLACKITALIC.OTF);
+  src: url(./fonts/SFPRODISPLAYBLACKITALIC.OTF);
 }
 @font-face {
   font-family:"back-r";
-  src:url(/fonts/SFPRODISPLAYREGULAR.OTF);
+  src:url(./fonts/SFPRODISPLAYREGULAR.OTF);
 }
 @font-face {
   font-family:"back-m";
-  src:url(/fonts/SFPRODISPLAYMEDIUM.OTF);
+  src:url(./fonts/SFPRODISPLAYMEDIUM.OTF);
 }
 body{
   display: grid;
